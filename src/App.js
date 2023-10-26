@@ -26,15 +26,15 @@ function App() {
           <nav>
             <a href="#about" className="selected" id="getAbout">
               <span className="fas fa-user"></span>
-              <span className="link">About</span>
+              <span className="link">{getString("about")}</span>
             </a>
             <a href="#resume" id="getResume">
               <span className="fas fa-file"></span>
-              <span className="link">Resume</span>
+              <span className="link">{getString("resume")}</span>
             </a>
             <a href="#contact" id="getContact">
               <span className="fas fa-at"></span>
-              <span className="link">Contact</span>
+              <span className="link">{getString("contact")}</span>
             </a>
           </nav>
         </header>
@@ -51,7 +51,7 @@ function App() {
               <h1 className="profile-name" id="nombre">
                 {getString("name")}
               </h1>
-              <h2 className="profile-profession">Web Designer</h2>
+              <h2 className="profile-profession">{getString("webDesigner")}</h2>
               <div className="profile-social" id="profile-social">
                 <a href="www.dribbble.com" className="fab fa-dribbble"></a>
                 <a href="www.twitter.com" className="fab fa-twitter"></a>
@@ -65,32 +65,29 @@ function App() {
             </div>
             <div className="profile-buttons">
               <a href="/myCV.txt" download>
-                DOWNLOAD CV <i className="fas fa-download"></i>
+                {getString("downlodeCv")}<i className="fas fa-download"></i>
               </a>
               <a href="#contact">
-                CONTACT ME <i className="fas fa-arrow-right"></i>
+              {getString("cONTACTME")} <i className="fas fa-arrow-right"></i>
               </a>
             </div>
           </section>
           <section id="about" className="about view">
             <article className="about-aboutMe">
-              <h3 className="title">About Me</h3>
+              <h3 className="title">{getString("aboutMe")}</h3>
               <div className="line-left">
                 <p>
-                  I am Ryan Adlard, web designer from USA, California. I have
-                  rich experience in web site design and building and
-                  customization, also I am good at wordpress. I love to talk
-                  with you about our unique.
+                  {getString("myInto")}
                 </p>
                 <div>
                   <div>
-                    <span>AGE . . . . </span>24
+                    <span>{getString("ageWithDot")} </span>{getString("ageInNumber")}
                   </div>
                   <div>
-                    <span>RESIDENCE . . . . </span>USA
+                    <span>{getString("residance")} </span>{getString("india")}
                   </div>
                   <div>
-                    <span>FREELANCE . . . . </span>Available
+                    <span>{getString("lookingFor")} </span>{getString("available")}
                   </div>
                   <div>
                     <span>ADDRESS . . . . </span>California, USA
